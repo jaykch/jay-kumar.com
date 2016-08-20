@@ -1,0 +1,190 @@
+section#projects {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(34, 34, 35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project-container {
+    padding: 2vh;
+}
+
+.tile {
+    margin: 1vh;
+
+}
+
+.t-type-1 {
+    height: 25vh;
+    width: 25vh;
+}
+
+.t-type-2 {
+    height: 25vh;
+    width: 52vh;
+}
+
+.t-type-3 {
+    height: 52vh;
+    width: 25vh;
+}
+
+.project-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.project-block {
+    display: flex;
+}
+
+.block-item {
+    margin: 0;
+    padding: 0;
+    width: 54vh;
+    height: 54vh;
+
+}
+
+.adjust-tile-1 {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 27vh;
+    height: 54vh;
+}
+
+.collage-img {
+    height: 4vh;
+    margin: auto;
+    padding: 1vh;
+}
+
+.size-xxl {
+    height: 18vh;
+}
+
+.size-xl {
+    height: 14vh;
+}
+
+.size-l {
+    height: 12vh;
+}
+
+.size-m {
+    height: 8vh;
+}
+
+.size-s {
+    height: 5vh;
+}
+
+.lng-collage {
+    max-width: 800px;
+    display: none;
+}
+
+.lng-list {
+    font-size: 2vh;
+    letter-spacing: 1px;
+    color: #decfde;
+    margin: 3vh 0;
+}
+
+.lng-list-container {
+    height: 100%;
+    width: 300px;
+    overflow: auto;
+    text-align: left;
+    padding: 1em;
+    background-color: rgba(58, 58, 58, 0.46);
+}
+
+.contact-container {
+    align-items: flex-start;
+}
+
+.contact {
+    font-size: 1.5em;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+.contact img {
+    height: 1.5em;
+    width: 1.5em;
+    vertical-align: middle;
+    margin-right: 2vh;
+}
+
+.contact-left {
+    background-color: rgba(58, 58, 58, 0.46);
+    width: 25vw;
+    font-size: 5vw;
+    padding: 0 3vh;
+    display: none;
+
+}
+
+.social-list {
+    font-family: 'Lobster', cursive;
+    font-size: 2vh;
+    align-self: flex-start;
+    margin: 10vh 0 0;
+
+}
+
+.social-list li {
+    margin: 1vh;
+}
+
+.social-list li img {
+    height: 4.5vh;
+}
+
+@media screen and (min-width: 720px) {
+    .lng-collage {
+        display: flex;
+    }
+
+    .contact {
+        font-size: 4vh;
+    }
+
+    .contact-left {
+        display: flex;
+    }
+
+    .contact img {
+        height: 4vh;
+        width: 4vh;
+        vertical-align: middle;
+        margin-right: 2vh;
+    }
+
+    nav {
+        font-size: 1.3em;
+    }
+
+    .headline {
+        font-size: 4em;
+    }
+    
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .headline {
+        font-size: 7em;
+    }
+
+    nav {
+        font-size: 1.6em;
+    }
+}

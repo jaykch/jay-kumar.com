@@ -1,0 +1,63 @@
+.modalDialog {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+
+    position: relative;
+
+}
+
+.close-modal {
+
+    margin: 1.5vh;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    text-decoration: none;
+    opacity: 1;
+    z-index: 100;
+}
+
+.modal-item {
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+#projects .modal-item{
+    height: auto;
+    min-height: 100vh;
+    overflow: auto;
+
+}
+
+
+
+
