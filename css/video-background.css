@@ -1,5 +1,5 @@
 
-.fullscreen-bg {
+.background-container {
     position: fixed;
     top: 0;
     right: 0;
@@ -11,7 +11,7 @@
     padding: 0;
 }
 
-.fullscreen-bg__video {
+.background.video {
     position: absolute;
     top: 50%;
     left: 50%;

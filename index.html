@@ -13,10 +13,13 @@
     <link rel="icon" type="ico" href="data/logos/favicon.ico"/>
     <link rel="shortcut icon" type="ico" href="data/logos/logo.fw.png"/>
     <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <link rel="stylesheet" type="text/css" href="css/cards.css">
     <link rel="stylesheet" type="text/css" href="css/items.css">
     <link rel="stylesheet" type="text/css" href="css/video-background.css">
-    <link rel="stylesheet" type="text/css" href="css/button-transition.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css"/>
@@ -25,8 +28,8 @@
     <script>
         (function ($) {
             $(window).on("load", function () {
-                $(".lng-list-container").mCustomScrollbar({
-                    theme:"minimal",
+                $(".nice-scroll").mCustomScrollbar({
+                    theme: "minimal",
                     setHeight: false,
                     setWidth: false
 
@@ -38,31 +41,34 @@
 <body>
 <header>
 
-    <div class="fullscreen-bg">
-        <video loop muted autoplay class="fullscreen-bg__video">
+    <div class="background-container">
+        <video loop muted autoplay class="background video">
             <source src="data/banner/videoplayback.mp4" type="video/mp4">
         </video>
     </div>
 
     <section id="banner" class="gradient-background">
         <div class="overlay"></div>
-        <h1 class="headline">Jay Kumar</h1>
-        <ul class="icons">
-            <li><a href="https://www.linkedin.com/in/jaykch" target="_blank"><img src="data/icons/linkedin-button.png"></a>
-            </li>
-            <li><a href="https://github.com/jaykch" target="_blank"><img src="data/icons/github-logo.png"></a></li>
-            <li><a href="http://stackoverflow.com/users/6631668/jay-kumar" target="_blank"><img src="data/icons/stack-overflow.png"></a></li>
-            <li><a href="https://www.facebook.com/jaykmrch" target="_blank"><img
-                    src="data/icons/facebook-logo-button.png"></a></li>
-            <li><a href="https://twitter.com/jay_kumar_1992" target="_blank"><img
-                    src="data/icons/twitter-logo-button.png"></a></li>
-        </ul>
-        <nav class="flex-row">
-            <ul class="nav flex-row">
+        <div class="container flex-col justify-center align-center">
+            <h1 class="headline col-lg-6 lobster">Jay Kumar</h1>
+            <ul class="icons col-lg-6 flex-row justify-center align-center">
+                <li><a href="https://www.linkedin.com/in/jaykch" target="_blank"><img
+                        src="data/icons/linkedin-button.png"></a>
+                </li>
+                <li><a href="https://github.com/jaykch" target="_blank"><img src="data/icons/github-logo.png"></a></li>
+                <li><a href="http://stackoverflow.com/users/6631668/jay-kumar" target="_blank"><img
+                        src="data/icons/stack-overflow.png"></a></li>
+                <li><a href="https://www.facebook.com/jaykmrch" target="_blank"><img
+                        src="data/icons/facebook-logo-button.png"></a></li>
+                <li><a href="https://twitter.com/jay_kumar_1992" target="_blank"><img
+                        src="data/icons/twitter-logo-button.png"></a></li>
+            </ul>
+        </div>
+        <nav class="nav">
+            <ul class="flex-row">
                 <li><a href="#projects">.projects</a></li>
                 <li><a href="#about">.me</a></li>
                 <li><a href="#contact">.contact</a></li>
-                <li><a href="#test">.test</a></li>
             </ul>
 
         </nav>
@@ -72,22 +78,23 @@
 
 <main>
 
-    <div id="projects" class="modalDialog">
-        <div>
-            <a href="#close" title="Close" class="close-modal"><img src="data/icons/cancel.png"
-                                                                    style="height: 36px;"></a>
-            <div class="modal-container flex-col">
+    <!--
+        <div id="projects" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close-modal"><img src="data/icons/cancel.png"
+                                                                        style="height: 36px;"></a>
+                <div class="modal-container flex-col">
 
-                <div class="modal-item flex-col justify-center align-center modal-projects">
-                    <div class="project-container">
-                        <div id="mukisports" class="project-item-container">
-                            <div class="project-overlay-text flex-col"><h3>Muki Sports</h3>
-                                <p>#sports #parties</p></div>
-                            <a href="http://www.mukisports.com/"
-                               class="mukisports tile t-type-3 flex-col justify-center" target="_blank">
-                            </a>
-                        </div>
-                        <div class="flex-row-wrap block-item ">
+                    <div class="modal-item flex-col justify-center align-center modal-projects">
+                        <div class="project-container">
+                            <div id="mukisports" class="project-item-container">
+                                <div class="project-overlay-text flex-col"><h3>Muki Sports</h3>
+                                    <p>#sports #parties</p></div>
+                                <a href="http://www.mukisports.com/"
+                                   class="mukisports tile t-type-3 flex-col justify-center" target="_blank">
+                                </a>
+                            </div>
+                            <div class="flex-row-wrap block-item ">
                                 <div id="landmarkventures" class="project-item-container">
                                     <div class="project-overlay-text flex-col"><h3>Landmark Ventures</h3>
                                         <p>#realestate #retail</p></div>
@@ -107,30 +114,299 @@
                                     <a href="http://jay-kumar.com/projects/wmp#menu"
                                        class="wmp tile t-type-2" target="_blank"></a>
                                 </div>
-                        </div>
-
-                        <div class="flex-row-wrap block-item hidden">
-
-                            <div class="adjust-tile-1">
                             </div>
 
+                            <div class="flex-row-wrap block-item hidden">
+
+                                <div class="adjust-tile-1">
+                                </div>
+
+                            </div>
+
+                            <div id="porcelain" class="project-item-container">
+                                <div class="project-overlay-text flex-col"><h3>Porcelain & Lilies</h3>
+                                    <p>#portfolio #designer</p></div>
+                                <a href="http://jay-kumar.com/projects/porcelain&lilies/"
+                                   class="porcelain tile t-type-3 flex-col justify-center" target="_blank">
+                                </a>
+                            </div>
+
+                            <div class="flex-row-wrap block-item hidden">
+                                <div class="tile t-type-2"></div>
+                                <div class="tile t-type-1"></div>
+                                <div class="tile t-type-1"></div>
+                            </div>
+
+
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    -->
 
-                        <div id="porcelain" class="project-item-container">
-                            <div class="project-overlay-text flex-col"><h3>Porcelain & Lilies</h3>
-                                <p>#portfolio #designer</p></div>
-                            <a href="http://jay-kumar.com/projects/porcelain&lilies/"
-                               class="porcelain tile t-type-3 flex-col justify-center" target="_blank">
-                            </a>
+    <div id="projects" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close-modal"><img src="data/icons/cancel.png"
+                                                                    style="height: 36px;"></a>
+            <div class="modal-container flex-col">
+
+                <div class="container modal-item nice-scroll">
+                    <div class="col-lg-6">
+                        <h2 class="lato-light">Current Projects</h2>
+                        <div id="wmp" class="medium card-container col-lg-6">
+                            <div class="card-wrapper">
+                                <a class="card-image flex-col justify-end"
+                                   href="http://jay-kumar.com/projects/wmp/#menu"
+                                   target="_blank">
+                                    <div class="card-label flex-col justify-center align-center">
+                                        <span class="name">Where is my Pidgey?</span>
+                                        <p class="description">
+                                            Helper for Pokemon Go <br>
+                                            Locate Pokemon spawning in london<br>
+                                            Popular tools like evolution CP calculator, IV calculator etc.
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="card-details">
+                                    <div class="flex-row justify-around align-center">
+                                        <div class="flex-col justify-between">
+                                            <div class="type"><span>WebApp</span></div>
+                                            <div class="extra"><span>GIT, Node.js, Gulp</span></div>
+                                        </div>
+                                        <div class="flex-col justify-between">
+                                            <div class="language"><span>MySQL, JavaScript</span></div>
+                                            <div class="framework"><span>Bootstrap, Symfony</span></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-footer flex-row justify-around align-center">
+                                    <a class="git" href="https://github.com/etidbury/pokereach" target="_blank"></a>
+                                    <a class="web" href="http://jay-kumar.com/projects/wmp/#menu" target="_blank"></a>
+                                </div>
+                            </div>
                         </div>
+                        <div id="realestate" class="medium card-container col-lg-6">
+                            <div class="card-wrapper">
+                                <a class="card-image flex-col justify-end"
+                                   href="http://www.jay-kumar.com/projects/neighborhoodestate/"
+                                   target="_blank">
+                                    <div class="card-label flex-col justify-center align-center">
+                                        <span class="name">Real Estate Template</span>
+                                        <p class="description">
+                                            Template for real estate websites
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="card-details">
+                                    <div class="flex-row justify-around align-center">
+                                        <div class="flex-col justify-between">
+                                            <div class="type"><span>Template, WebApp</span></div>
+                                            <div class="extra"><span>GIT, Node.js, Webpack</span></div>
+                                        </div>
+                                        <div class="flex-col justify-between">
+                                            <div class="language"><span>ES6, ES5, JavaScript</span></div>
+                                            <div class="framework"><span>React.js, Symfony</span></div>
+                                        </div>
+                                    </div>
 
-                        <div class="flex-row-wrap block-item hidden">
-                            <div class="tile t-type-2"></div>
-                            <div class="tile t-type-1"></div>
-                            <div class="tile t-type-1"></div>
+                                </div>
+                                <div class="card-footer flex-row justify-around align-center">
+                                    <a class="git" href="https://github.com/etidbury/realestate" target="_blank"></a>
+                                    <a class="web" href="http://www.jay-kumar.com/projects/neighborhoodestate/"
+                                       target="_blank"></a>
+                                </div>
+                            </div>
                         </div>
+                        <div id="economygames" class="medium card-container col-lg-6">
+                            <div class="card-wrapper">
+                                <a class="card-image flex-col justify-end" href="http://economygames.co.uk/"
+                                   target="_blank">
+                                    <div class="card-label flex-col justify-center align-center">
+                                        <span class="name">Economy Games</span>
+                                        <p class="description">
+                                            E-commerce for a video game retail company
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="card-details">
+                                    <div class="flex-row justify-around align-center">
+                                        <div class="flex-col justify-between">
+                                            <div class="type"><span>E-commerce</span></div>
+                                            <div class="extra"><span>Gulp, Bootstrap</span></div>
+                                        </div>
+                                        <div class="flex-col justify-between">
+                                            <div class="language"><span>JavaScript, Less</span></div>
+                                            <div class="framework"><span>Symfony, Angular 1.0</span></div>
+                                        </div>
+                                    </div>
 
+                                </div>
+                                <div class="card-footer flex-row justify-around align-center">
+                                    <a class="web" href="http://economygames.co.uk/" target="_blank"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-6">
+                        <h2 class="lato-light">Finished Projects</h2>
+                        <div id="neighborhood" class="medium card-container col-lg-6">
+                            <div class="card-wrapper">
+                                <a class="card-image flex-col justify-end"
+                                   href="http://www.jay-kumar.com/projects/neighborhoodestate/"
+                                   target="_blank">
+                                    <div class="card-label flex-col justify-center align-center">
+                                        <span class="name">Neighborhood Estate</span>
+                                        <p class="description">
+                                            Website for a real estate company
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="card-details">
+                                    <div class="flex-row justify-around align-center">
+                                        <div class="flex-col justify-between">
+                                            <div class="type"><span>WebApp, Real Estate</span></div>
+                                            <div class="extra"><span>GIT, Node.js, Webpack</span></div>
+                                        </div>
+                                        <div class="flex-col justify-between">
+                                            <div class="language"><span>ES6, ES5, JavaScript</span></div>
+                                            <div class="framework"><span>React.js, Symfony</span></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-footer flex-row justify-around align-center">
+                                    <a class="git" href="https://github.com/jaykch/neighborhoodestate"
+                                       target="_blank"></a>
+                                    <a class="web" href="http://www.jay-kumar.com/projects/neighborhoodestate/"
+                                       target="_blank"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="mukisports" class="medium card-container col-lg-6">
+                            <div class="card-wrapper">
+                                <a class="card-image flex-col justify-end" href="http://www.mukisports.com"
+                                   target="_blank">
+                                    <div class="card-label flex-col justify-center align-center">
+                                        <span class="name">Muki Sports</span>
+                                        <p class="description">
+                                            Website for a small business that holds sports events for children's
+                                            birthday
+                                            parties
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="card-details">
+                                    <div class="flex-row justify-around align-center">
+                                        <div class="flex-col justify-between">
+                                            <div class="type"><span>Small Business</span></div>
+                                            <div class="extra"><span>GIT, Fireworks, Premiere Pro</span></div>
+                                        </div>
+                                        <div class="flex-col justify-between">
+                                            <div class="language"><span>HTML5, CSS3, JavaScript</span></div>
+                                            <div class="framework"><span>Bootstrap</span></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-footer flex-row justify-around align-center">
+                                    <a class="git" href="https://github.com/jaykch/mukisports" target="_blank"></a>
+                                    <a class="web" href="http://www.mukisports.com" target="_blank"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="weatherfy" class="medium card-container col-lg-6">
+                            <div class="card-wrapper">
+                                <a class="card-image flex-col justify-end"
+                                   href="http://jay-kumar.com/projects/weatherfy/src"
+                                   target="_blank">
+                                    <div class="card-label flex-col justify-center align-center">
+                                        <span class="name">Weatherfy</span>
+                                        <p class="description">
+                                            WebApp/Widget using openweather API that displays current weather and a 5
+                                            day forecast of over 20,000 locations.
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="card-details">
+                                    <div class="flex-row justify-around align-center">
+                                        <div class="flex-col justify-between">
+                                            <div class="type"><span>WebApp, Widget</span></div>
+                                            <div class="extra"><span>GIT, Webpack, Balsamiq</span></div>
+                                        </div>
+                                        <div class="flex-col justify-between">
+                                            <div class="language"><span>ES6, ES5, JavaScript</span></div>
+                                            <div class="framework"><span>React.js, Flux, Redux</span></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-footer flex-row justify-around align-center">
+                                    <a class="git" href="https://github.com/jaykch/weatherfy" target="_blank"></a>
+                                    <a class="web" href="http://jay-kumar.com/projects/weatherfy/src" target="_blank"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="porcelain" class="medium card-container col-lg-6">
+                            <div class="card-wrapper">
+                                <a class="card-image flex-col justify-end" href="http://jay-kumar.com/projects/porcelain&lilies/"
+                                   target="_blank">
+                                    <div class="card-label flex-col justify-center align-center">
+                                        <span class="name">Porcelain & Lilies</span>
+                                        <p class="description">
+                                            Portfolio for an interior designer
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="card-details">
+                                    <div class="flex-row justify-around align-center">
+                                        <div class="flex-col justify-between">
+                                            <div class="type"><span>Portfolio Website</span></div>
+                                            <div class="extra"><span>Fireworks</span></div>
+                                        </div>
+                                        <div class="flex-col justify-between">
+                                            <div class="language"><span>HTML5, CSS3, JavaScript</span></div>
+                                            <div class="framework"><span></span></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-footer flex-row justify-around align-center">
+                                    <a class="web" href="http://jay-kumar.com/projects/porcelain&lilies/" target="_blank"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="landmark" class="medium card-container col-lg-6">
+                            <div class="card-wrapper">
+                                <a class="card-image flex-col justify-end" href="http://landmarkventures.in/"
+                                   target="_blank">
+                                    <div class="card-label flex-col justify-center align-center">
+                                        <span class="name">Landmark Ventures</span>
+                                        <p class="description">
+                                            Website for a small real estate company
+                                        </p>
+                                    </div>
+                                </a>
+                                <div class="card-details">
+                                    <div class="flex-row justify-around align-center">
+                                        <div class="flex-col justify-between">
+                                            <div class="type"><span>Website, Real Estate</span></div>
+                                            <div class="extra"><span>Fireworks, Premiere Pro</span></div>
+                                        </div>
+                                        <div class="flex-col justify-between">
+                                            <div class="language"><span>HTML5, CSS3, JavaScript</span></div>
+                                            <div class="framework"><span></span></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-footer flex-row justify-around align-center">
+                                    <a class="web" href="http://landmarkventures.in" target="_blank"></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -145,7 +421,7 @@
 
                 <div class="modal-item flex-row-wrap justify-around">
 
-                    <div class=" lng-list-container">
+                    <div class="nice-scroll list-container">
                         <div class="flex-col lng-list">
                             <h3 style="color: orangered">Back End</h3>
                             <ul class="flex-col">
@@ -208,7 +484,7 @@
                         </div>
                     </div>
 
-                    <div class="lng-collage flex-row-wrap">
+                    <div class="lng-collage flex-row wrap">
 
                         <img src="data/logos/collage/angular2.png" class="collage-img size-l">
                         <img src="data/logos/collage/jquery.fw.png" class="collage-img size-xl">
@@ -288,18 +564,6 @@
             </div>
         </div>
     </div>
-
-    <div id="test" class="modalDialog">
-        <div>
-            <a href="#close" title="Close" class="close-modal"><img src="data/icons/cancel.png"
-                                                                    style="height: 36px;"></a>
-            <div class="modal-container flex-col">
-
-                <div class="modal-item flex-col justify-center align-center modal-projects">
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
 </main>

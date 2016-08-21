@@ -96,7 +96,7 @@ section#projects {
     margin: 3vh 0;
 }
 
-.lng-list-container {
+.list-container {
     height: 100%;
     width: 300px;
     overflow: auto;

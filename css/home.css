@@ -1,0 +1,20 @@
+.icons img{
+    height: 4vh;
+    min-height: 24px;
+    width: 4vh;
+    min-width: 24px;
+    margin: 1vh;
+}
+
+.headline{
+    font-size: 4em;
+}
+
+.nav{
+    position: fixed;
+    bottom: 0;
+}
+
+.nav li{
+    margin: 0 10px;
+}
