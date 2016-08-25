@@ -3,7 +3,7 @@
 }
 
 #projects h2 {
-    margin-top: 80px;
+    margin-top: 20px;
     padding: 5px;
 }
 
@@ -124,7 +124,7 @@
 }
 
 #wmp .card-image {
-    background: url("../data/img/projects/wmp.png") no-repeat 10% 0;
+    background: url("../data/img/projects/wmp.jpg") no-repeat 10% 0;
     background-size: cover;
 }
 
@@ -133,7 +133,7 @@
 }
 
 #realestate .card-image {
-    background: url("../data/img/projects/realestate.png") no-repeat 0 10%;
+    background: url("../data/img/projects/realestate.jpg") no-repeat 0 10%;
     background-size: cover;
 }
 
@@ -142,7 +142,7 @@
 }
 
 #economygames .card-image {
-    background: url("../data/img/projects/economygames.png") no-repeat bottom;
+    background: url("../data/img/projects/economygames.jpg") no-repeat bottom;
     background-size: 110%;
 }
 
@@ -151,7 +151,7 @@
 }
 
 #neighborhood .card-image {
-    background: url("../data/img/projects/realestate.png") no-repeat 0 10%;
+    background: url("../data/img/projects/realestate.jpg") no-repeat 0 10%;
     background-size: cover;
 }
 
@@ -160,7 +160,7 @@
 }
 
 #weatherfy .card-image {
-    background: url("../data/img/projects/weatherfy.png") no-repeat 60% 0;
+    background: url("../data/img/projects/weatherfy.jpg") no-repeat 60% 0;
     background-size: cover;
 }
 
@@ -169,7 +169,7 @@
 }
 
 #porcelain .card-image {
-    background: url("../data/img/projects/porcelain.png") no-repeat 0 10%;
+    background: url("../data/img/projects/porcelain.jpg") no-repeat 0 10%;
     background-size: cover;
 }
 
@@ -178,7 +178,7 @@
 }
 
 #landmark .card-image {
-    background: url("../data/img/projects/landmarkventures.png") no-repeat 0 10%;
+    background: url("../data/img/projects/landmarkventures.jpg") no-repeat 0 10%;
     background-size: cover;
 }
 
