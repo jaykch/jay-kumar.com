@@ -8,6 +8,7 @@
     padding: 0;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
+    font-weight: 300;
     color: white;
     list-style: none;
 
@@ -41,7 +42,7 @@ a:hover, a:active, a:link, a:visited, a:focus {
     text-decoration: none;
 }
 
-ul > li > a:hover {
+a:hover {
     opacity: 0.5;
 }
 
@@ -337,6 +338,7 @@ section#banner {
 .card-details{
     height: 30%;
     background: #f5f5f5;
+    padding: 0 3px;
 }
 
 .card-details span{
@@ -521,21 +523,6 @@ section#projects {
 
 }
 
-.t-type-1 {
-    height: 25vh;
-    width: 25vh;
-}
-
-.t-type-2 {
-    height: 25vh;
-    width: 52vh;
-}
-
-.t-type-3 {
-    height: 52vh;
-    width: 25vh;
-}
-
 .project-container {
     display: flex;
     flex-flow: row wrap;
@@ -546,13 +533,6 @@ section#projects {
     display: flex;
 }
 
-.block-item {
-    margin: 0;
-    padding: 0;
-    width: 54vh;
-    height: 54vh;
-
-}
 
 .adjust-tile-1 {
     display: flex;
@@ -569,22 +549,30 @@ section#projects {
 
 .size-xxl {
     height: 18vh;
+    width: auto;
 }
 
 .size-xl {
     height: 14vh;
+    width: auto;
 }
 
 .size-l {
     height: 12vh;
+    width: auto;
+
 }
 
 .size-m {
     height: 8vh;
+    width: auto;
+
 }
 
 .size-s {
     height: 5vh;
+    width: auto;
+
 }
 
 .lng-collage {
@@ -692,6 +680,15 @@ section#projects {
     }
 }
 
+.cv{
+    margin: 10px;
+}
+
+.cv > span{
+    border: 2px #f5f3ff solid;
+    padding: 5px 10px;
+    font-size: 18px;
+}
 
 .background-container {
     position: fixed;

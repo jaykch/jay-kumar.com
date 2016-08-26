@@ -27,6 +27,7 @@
 .card-details{
     height: 30%;
     background: #f5f5f5;
+    padding: 0 3px;
 }
 
 .card-details span{

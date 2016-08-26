@@ -8,6 +8,7 @@
     padding: 0;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
+    font-weight: 300;
     color: white;
     list-style: none;
 
@@ -41,7 +42,7 @@ a:hover, a:active, a:link, a:visited, a:focus {
     text-decoration: none;
 }
 
-ul > li > a:hover {
+a:hover {
     opacity: 0.5;
 }
 
