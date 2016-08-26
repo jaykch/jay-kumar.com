@@ -272,15 +272,19 @@ section#banner {
 
 .close-modal {
 
-    margin: 1.5vh;
+    margin: 2vh;
     padding: 0;
     position: absolute;
     top: 0;
     right: 0;
-    width: 36px;
     text-decoration: none;
     opacity: 1;
     z-index: 100;
+}
+
+.close-modal > img{
+    height: 4vh;
+    width: 4vh;
 }
 
 #about .modal-item, #contact .modal-item {
@@ -544,7 +548,6 @@ section#projects {
 .collage-img {
     height: 4vh;
     margin: auto;
-    padding: 1vh;
 }
 
 .size-xxl {
@@ -576,7 +579,7 @@ section#projects {
 }
 
 .lng-collage {
-    max-width: 800px;
+    max-width: 1000px;
     display: none;
 }
 
