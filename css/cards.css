@@ -13,6 +13,10 @@
     width: 100%;
 }
 
+.card-wrapper > a:hover{
+    opacity: 0.7;
+}
+
 .card-image {
     background-size: cover;
     height: 60%;
@@ -186,6 +190,79 @@
 #landmark:hover .card-image {
     background-position: 0 0;
 }
+
+#tesla-tribute .card-image {
+    background: url("../data/img/projects/tesla-tribute.jpg") no-repeat 0 20%;
+    background-size: cover;
+}
+
+#tesla-tribute:hover .card-image {
+    background-position: 0 0;
+}
+
+#wiki-viewer .card-image {
+    background: url("../data/img/projects/wiki-viewer.jpg") no-repeat 40% 0;
+    background-size: cover;
+}
+
+#wiki-viewer:hover .card-image {
+    background-position: 20% 0;
+}
+
+#twitch .card-image {
+    background: url("../data/img/projects/twitch-fcc.jpg") no-repeat 40% 0;
+    background-size: cover;
+}
+
+#twitch:hover .card-image {
+    background-position: 60% 0;
+}
+
+#random-quote .card-image {
+    background: url("../data/img/projects/random-quote.jpg") no-repeat 0 50%;
+    background-size: cover;
+}
+
+#random-quote:hover .card-image {
+    background-position: 0 30%;
+}
+
+#pomodoro .card-image {
+    background: url("../data/img/projects/pomodoro-clock.jpg") no-repeat 0 10%;
+    background-size: cover;
+}
+
+#pomodoro:hover .card-image {
+    background-position: 0 40%;
+}
+
+#calculator .card-image {
+     background: url("../data/img/projects/calculator.jpg") no-repeat 0 50%;
+     background-size: cover;
+ }
+
+#calculator:hover .card-image {
+    background-position: 0 30%;
+}
+
+#simon .card-image {
+    background: url("../data/img/projects/simon.jpg") no-repeat 0 60%;
+    background-size: cover;
+}
+
+#simon:hover .card-image {
+    background-position: 0 80%;
+}
+
+#tic-tac-toe .card-image {
+    background: url("../data/img/projects/tic-tac-toe.jpg") no-repeat 50% 0;
+    background-size: cover;
+}
+
+#tic-tac-toe:hover .card-image {
+    background-position: 70% 0;
+}
+
 
 .card-details img{
     height: 16px;
