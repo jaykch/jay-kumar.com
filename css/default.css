@@ -171,12 +171,7 @@ h1 {
     transition: all 3s ease;
 }
 
-div.banner {
-    height: 100vh;
-    position: relative;
-    background: rgba(24, 24, 24, 0.64);
 
-}
 
 .learn-more {
     position: absolute;
@@ -204,7 +199,7 @@ section#banner {
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow-x: hidden;
+    overflow: hidden;
     z-index: 10;
     border:none;
 
