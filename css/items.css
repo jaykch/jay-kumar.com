@@ -174,11 +174,11 @@ section#projects {
     }
 }
 
-.cv{
+.homepage-button{
     margin: 10px;
 }
 
-.cv > span{
+.homepage-button > span{
     border: 2px #f5f3ff solid;
     padding: 5px 10px;
     font-size: 18px;
