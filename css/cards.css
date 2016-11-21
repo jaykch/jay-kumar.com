@@ -263,6 +263,24 @@
     background-position: 70% 0;
 }
 
+#camper-leaderboard .card-image {
+    background: url("../data/img/projects/camper-leaderboard.jpg") no-repeat 0 70%;
+    background-size: cover;
+}
+
+#camper-leaderboard:hover .card-image {
+    background-position: 0 50%;
+}
+
+#markdown-previewer .card-image {
+    background: url("../data/img/projects/markdown-previewer.jpg") no-repeat 50% 0;
+    background-size: cover;
+}
+
+#markdown-previewer:hover .card-image {
+    background-position: 70% 0;
+}
+
 
 .card-details img{
     height: 16px;
